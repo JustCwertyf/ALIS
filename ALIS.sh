@@ -7,6 +7,7 @@ echo "1. NVIDIA drivers"
 echo "2. AMD drivers "
 echo "3. Intel drivers "
 echo "4. All combined"
+echo "5. No drivers"
 read choice
 
 case $choice in
@@ -31,8 +32,10 @@ case $choice in
         sudo pacman -S nvidia-dkms --noconfirm
         sudo pacman -S nvidia-utils --noconfirm
         ;;
+    5) 
+        echo "No GPU drivers will install"
     *)
-        echo "Uncorrect. Chose number 1-4."
+        echo "Uncorrect. Chose number 1-5."
         ;;
 esac
 sudo pacman -S archlinux-keyring --noconfirm
