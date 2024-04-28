@@ -48,6 +48,7 @@ sudo pacman -S noto-fonts-emoji noto-fonts ttf-liberation --noconfirm
 sudo pacman -S pulseaudio --noconfirm
 sudo pacman -S blueman --noconfirm
 sudo systemctl enable bluetooth
+cd /home
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
